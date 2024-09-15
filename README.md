@@ -7,4 +7,4 @@
 4. pipeline 
 5. Main file 
 
-# URI of repo - 484857182185.dkr.ecr.eu-north-1.amazonaws.com/visa
+# URI of repo - 484857182185.dkr.ecr.us-east-1.amazonaws.com/visarepo
