@@ -35,3 +35,16 @@ class ClassificationMetricArtifact:
 class ModelTrainerArtifact:
     trained_model_file_path:str 
     metric_artifact:ClassificationMetricArtifact
+
+
+@dataclass
+class ModelEvaluationArtifact:
+    is_model_accepted:bool # if current model is accepted rather than production model, it is true, else, it is false
+    changed_accuracy:float # difference between the current or training accracy and production accuracy 
+    s3_model_path:str 
+    trained_model_path:str
+
+@dataclass
+class ModelPusherArtifact:
+    bucket_name:str
+    s3_model_path:str
